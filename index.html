@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Servicio VIP · Notiresultados Colombia</title>
-<meta name="description" content="Recibe todos los resultados de las loterías directo en tu WhatsApp, todos los días. Servicio VIP de Notiresultados Colombia.">
+<meta name="description" content="Recibe los resultados completos de todas las loterías de Colombia directo en tu WhatsApp, todos los días. Servicio informativo de Notiresultados Colombia.">
 <link rel="icon" href="img/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,8 +40,6 @@
   img{display:block;max-width:100%}
   .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 22px}
 
-  .cond{font-family:'Barlow Condensed',sans-serif;letter-spacing:.01em}
-
   /* ---------- TOP BAR ---------- */
   .topbar{
     background:var(--azul-noche);
@@ -68,9 +66,7 @@
     background:var(--blanco);
     clip-path:polygon(0 100%,100% 100%,100% 0,0 65%);
   }
-  .hero-head{
-    display:flex;align-items:center;gap:14px;margin-bottom:30px;
-  }
+  .hero-head{display:flex;align-items:center;gap:14px;margin-bottom:30px}
   .hero-logo{
     width:62px;height:62px;border-radius:50%;flex:none;
     background:#fff;padding:3px;box-shadow:0 4px 14px rgba(0,0,0,.25);
@@ -79,9 +75,7 @@
   .hero-brand .nm{font-weight:800;font-size:18px;line-height:1.1;letter-spacing:.01em}
   .hero-brand .sb{font-size:12.5px;color:#A9BEEC;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
 
-  .hero-grid{
-    display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;
-  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
   .badge-vip{
     display:inline-flex;align-items:center;gap:8px;
     background:rgba(224,161,0,.16);
@@ -109,8 +103,8 @@
   }
   .hero-cta{
     display:inline-flex;align-items:center;gap:11px;
-    background:var(--verde-wa);color:#fff;text-decoration:none;
-    font-weight:700;font-size:16.5px;
+    background:var(--verde-wa);color:#fff;text-decoration:none;border:none;
+    font-family:'Inter',sans-serif;font-weight:700;font-size:16.5px;cursor:pointer;
     padding:15px 26px;border-radius:13px;
     box-shadow:0 8px 22px rgba(31,168,85,.40);
     transition:transform .15s ease, background .15s ease;
@@ -121,19 +115,12 @@
 
   /* phone mock */
   .phone{
-    justify-self:center;
-    width:248px;
-    background:#0B1736;
-    border-radius:30px;
-    padding:11px;
+    justify-self:center;width:248px;background:#0B1736;
+    border-radius:30px;padding:11px;
     box-shadow:var(--sombra-fuerte), inset 0 0 0 1px rgba(255,255,255,.07);
   }
-  .phone-screen{
-    background:#E9EDF6;border-radius:21px;overflow:hidden;
-  }
-  .phone-top{
-    background:var(--azul);color:#fff;padding:11px 13px;display:flex;align-items:center;gap:9px;
-  }
+  .phone-screen{background:#E9EDF6;border-radius:21px;overflow:hidden}
+  .phone-top{background:var(--azul);color:#fff;padding:11px 13px;display:flex;align-items:center;gap:9px}
   .phone-top .pl{width:30px;height:30px;border-radius:50%;background:#fff;padding:2px;flex:none}
   .phone-top .pl img{width:100%;height:100%;border-radius:50%;object-fit:cover}
   .phone-top .pn{font-size:13px;font-weight:700;line-height:1.1}
@@ -143,12 +130,12 @@
     background:#fff;border-radius:4px 13px 13px 13px;padding:9px 11px;
     font-size:11.5px;color:#1B2742;box-shadow:0 1px 2px rgba(0,0,0,.08);
   }
-  .msg .ti{font-weight:700;color:var(--azul);font-size:11px;margin-bottom:5px;letter-spacing:.02em}
+  .msg .ti{font-weight:700;color:var(--azul);font-size:10.5px;margin-bottom:5px;letter-spacing:.02em}
   .msg table{width:100%;border-collapse:collapse;font-size:10.5px}
   .msg td{padding:2px 0}
   .msg td:first-child{color:#3A476A;font-weight:500}
   .msg td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;color:#10204A}
-  .msg .hr{border-top:1px dashed #D5DCEC;margin:6px 0}
+  .msg .more{margin-top:6px;font-size:9.5px;color:#93A1C2;text-align:center;font-style:italic}
   .msg .stamp{font-size:9px;color:#93A1C2;text-align:right;margin-top:6px}
 
   /* ---------- SECCIONES ---------- */
@@ -196,106 +183,44 @@
   .feat h3{font-size:16.5px;font-weight:700;margin-bottom:7px;color:var(--tinta)}
   .feat p{font-size:14px;color:var(--gris-suave);line-height:1.5}
 
-  /* calendario */
+  /* comparativo loterias */
   .cal{background:var(--azul-noche);color:#fff;border-radius:20px;padding:34px 30px;margin-top:36px;position:relative;overflow:hidden}
   .cal::before{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(61,107,214,.45),transparent 70%)}
   .cal h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:23px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px;position:relative}
-  .cal .csub{font-size:13.5px;color:#A9BEEC;margin-bottom:22px;position:relative}
-  .days{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative}
-  @media(max-width:720px){.days{grid-template-columns:repeat(2,1fr)}}
-  .day{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 12px;text-align:center}
-  .day .dn{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8FA6DA;margin-bottom:8px}
-  .day .dl{font-size:14.5px;font-weight:700;line-height:1.35}
-  .day .dl span{display:block;font-weight:500;color:#C7D4F0;font-size:13.5px}
+  .cal .csub{font-size:13.5px;color:#A9BEEC;margin-bottom:24px;position:relative;max-width:560px}
+  .cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative}
+  .cmp-col{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 20px}
+  .cmp-col.vip{background:rgba(31,168,85,.12);border-color:rgba(31,168,85,.4)}
+  .cmp-col .ch{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;color:#8FA6DA}
+  .cmp-col.vip .ch{color:#6FE0A0}
+  .cmp-col .cn{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;line-height:1;margin-bottom:4px}
+  .cmp-col .cl{font-size:13.5px;color:#C7D4F0;margin-bottom:16px}
+  .cmp-li{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;color:#E3EAF8;margin-bottom:9px;line-height:1.4}
+  .cmp-li:last-child{margin-bottom:0}
+  .cmp-li svg{flex:none;width:17px;height:17px;margin-top:1px}
 
-  /* aciertos */
-  .aciertos{background:var(--gris-papel);border-top:1px solid var(--gris-linea)}
-  .gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
-  .shot{
-    position:relative;border-radius:14px;overflow:hidden;background:#fff;
-    border:1px solid var(--gris-linea);box-shadow:var(--sombra);
-    aspect-ratio:3/4;cursor:pointer;
-    transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .shot:hover{transform:translateY(-3px);box-shadow:var(--sombra-fuerte)}
-  .shot img{width:100%;height:100%;object-fit:cover}
-  .shot .tag{
-    position:absolute;left:9px;bottom:9px;right:9px;
-    background:rgba(7,28,77,.92);color:#fff;font-size:11.5px;font-weight:700;
-    padding:7px 10px;border-radius:8px;backdrop-filter:blur(3px);line-height:1.25;
-  }
-  .shot .tag b{color:#FFC53D}
-  .tickets-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
-  .tk{position:relative;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--gris-linea);box-shadow:var(--sombra);cursor:pointer;transition:transform .15s ease}
-  .tk:hover{transform:translateY(-3px)}
-  .tk img{width:100%;height:230px;object-fit:cover;object-position:center}
-  .tk .tklabel{
-    position:absolute;top:9px;left:9px;background:var(--verde-wa);color:#fff;
-    font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
-    padding:5px 9px;border-radius:6px;
-  }
-  .acl-note{margin-top:22px;font-size:13px;color:var(--gris-suave);text-align:center;max-width:620px;margin-left:auto;margin-right:auto}
-
-  /* botón revelar aciertos */
-  .reveal-wrap{margin-top:34px}
-  .reveal-btn{
-    display:flex;align-items:center;gap:12px;width:100%;
-    background:#fff;border:1.5px solid var(--azul);color:var(--azul);
-    font-family:'Inter',sans-serif;font-weight:700;font-size:16px;
-    padding:18px 22px;border-radius:14px;cursor:pointer;
-    box-shadow:var(--sombra);transition:background .15s ease, color .15s ease;
-  }
-  .reveal-btn:hover{background:var(--azul);color:#fff}
-  .reveal-btn svg{width:22px;height:22px;flex:none}
-  .reveal-btn .rb-label{flex:1;text-align:left}
-  .reveal-btn .chev{transition:transform .25s ease}
-  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
-  .reveal-panel{margin-top:22px}
-  .reveal-panel[hidden]{display:none}
-
-  /* precio */
-  .precio-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:36px}
+  /* precio (sin métodos a la vista) */
+  .precio-wrap{display:flex;justify-content:center;margin-top:36px}
   .price-card{
     background:linear-gradient(165deg,var(--azul-hondo),var(--azul-noche));
-    color:#fff;border-radius:22px;padding:38px 34px;box-shadow:var(--sombra-fuerte);
-    position:relative;overflow:hidden;
+    color:#fff;border-radius:22px;padding:40px 38px;box-shadow:var(--sombra-fuerte);
+    position:relative;overflow:hidden;max-width:460px;width:100%;text-align:center;
   }
   .price-card::before{content:"";position:absolute;right:-50px;top:-50px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(224,161,0,.28),transparent 70%)}
   .price-tag{display:inline-block;background:rgba(224,161,0,.18);border:1px solid rgba(224,161,0,.45);color:#FFD66B;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 13px;border-radius:100px;margin-bottom:20px;position:relative}
-  .price-amt{display:flex;align-items:baseline;gap:8px;position:relative;margin-bottom:6px}
+  .price-amt{display:flex;align-items:baseline;gap:8px;position:relative;margin-bottom:6px;justify-content:center}
   .price-amt .cur{font-size:24px;font-weight:700;color:#BFD2F6}
   .price-amt .num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:68px;line-height:.9;letter-spacing:.01em}
   .price-amt .per{font-size:15px;color:#BFD2F6;font-weight:600}
   .price-desc{font-size:14px;color:#C7D4F0;margin-bottom:24px;position:relative}
-  .price-list{position:relative;margin-bottom:28px}
+  .price-list{position:relative;margin-bottom:28px;text-align:left;max-width:330px;margin-left:auto;margin-right:auto}
   .price-list li{list-style:none;display:flex;gap:10px;align-items:flex-start;font-size:14.5px;margin-bottom:12px;color:#EAF0FC}
   .price-list svg{flex:none;width:19px;height:19px;margin-top:1px}
   .price-card .hero-cta{width:100%;justify-content:center;position:relative}
+  .price-foot{margin-top:14px;font-size:12.5px;color:#9FB4E4;position:relative}
 
-  /* pasos pago */
-  .pasos h3{font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gris-suave);margin-bottom:22px}
-  .step{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
-  .step .snum{
-    flex:none;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
-    background:var(--azul);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;
-  }
-  .step .stx h4{font-size:15.5px;font-weight:700;margin-bottom:3px}
-  .step .stx p{font-size:13.5px;color:var(--gris-suave);line-height:1.45}
-
-  .pagos-box{background:#fff;border:1px solid var(--gris-linea);border-radius:16px;padding:22px 22px;margin-top:6px;box-shadow:var(--sombra)}
-  .pagos-box .pbt{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-suave);margin-bottom:14px}
-  .pago{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--gris-linea)}
-  .pago:last-child{border-bottom:0}
-  .pago .pl{display:flex;align-items:center;gap:11px}
-  .pago .pdot{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:13px;color:#fff;flex:none}
-  .pago .pnm{font-size:14.5px;font-weight:700;color:var(--tinta)}
-  .pago .pnu{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;letter-spacing:.04em;color:var(--azul);font-variant-numeric:tabular-nums}
-
-  /* CTA final */
-  .final{
-    background:linear-gradient(170deg,var(--azul-hondo),var(--azul-noche));
-    color:#fff;text-align:center;
-  }
+  /* CTA FINAL */
+  .final{background:linear-gradient(170deg,var(--azul-hondo),var(--azul-noche));color:#fff;text-align:center}
   .final h2{color:#fff}
   .final .lead{color:#C7D4F0;margin:0 auto 28px}
   .final .hero-cta{font-size:17.5px;padding:17px 34px}
@@ -308,12 +233,52 @@
   footer .fb span{font-weight:700;color:#fff;font-size:15px}
   footer .legal{max-width:560px;margin:0 auto;line-height:1.6;font-size:12px;color:#6F84B8}
 
-  /* lightbox */
-  .lb{position:fixed;inset:0;background:rgba(5,15,40,.92);display:none;align-items:center;justify-content:center;z-index:90;padding:24px;cursor:zoom-out}
-  .lb.on{display:flex}
-  .lb img{max-width:92%;max-height:88vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
-  .lb .x{position:absolute;top:20px;right:24px;color:#fff;font-size:34px;font-weight:300;cursor:pointer;line-height:1;opacity:.85}
-  .lb .x:hover{opacity:1}
+  /* ---------- MODAL ---------- */
+  .modal-ov{
+    position:fixed;inset:0;background:rgba(5,15,40,.72);backdrop-filter:blur(4px);
+    display:none;align-items:center;justify-content:center;z-index:100;padding:20px;
+  }
+  .modal-ov.on{display:flex}
+  .modal{
+    background:#fff;border-radius:22px;max-width:440px;width:100%;
+    max-height:90vh;overflow-y:auto;position:relative;
+    box-shadow:0 30px 80px rgba(0,0,0,.5);
+    animation:pop .25s ease;
+  }
+  @keyframes pop{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+  .modal-head{
+    background:linear-gradient(160deg,var(--azul-hondo),var(--azul-noche));
+    color:#fff;padding:26px 26px 22px;border-radius:22px 22px 0 0;text-align:center;position:relative;
+  }
+  .modal-head .mlogo{width:52px;height:52px;border-radius:50%;background:#fff;padding:3px;margin:0 auto 12px}
+  .modal-head .mlogo img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+  .modal-head h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:25px;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+  .modal-head .mp{margin-top:6px;font-size:13.5px;color:#BFD2F6}
+  .modal-head .mprice{margin-top:12px;display:inline-flex;align-items:baseline;gap:6px;background:rgba(255,255,255,.1);padding:8px 16px;border-radius:100px}
+  .modal-head .mprice b{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800}
+  .modal-head .mprice small{font-size:12px;color:#BFD2F6}
+  .modal-x{position:absolute;top:14px;right:16px;width:30px;height:30px;border:none;background:rgba(255,255,255,.15);color:#fff;border-radius:50%;font-size:20px;cursor:pointer;line-height:1;display:grid;place-items:center}
+  .modal-x:hover{background:rgba(255,255,255,.28)}
+  .modal-body{padding:24px 26px 28px}
+  .mstep{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-suave);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .mstep .mnum{width:22px;height:22px;border-radius:50%;background:var(--azul);color:#fff;display:grid;place-items:center;font-size:12px;flex:none}
+  .pago{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 14px;border:1px solid var(--gris-linea);border-radius:12px;margin-bottom:10px;background:var(--gris-papel)}
+  .pago .pl{display:flex;align-items:center;gap:11px}
+  .pago .pdot{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:14px;color:#fff;flex:none}
+  .pago .pnm{font-size:14.5px;font-weight:700;color:var(--tinta)}
+  .pago .pr{display:flex;align-items:center;gap:8px}
+  .pago .pnu{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;letter-spacing:.03em;color:var(--azul);font-variant-numeric:tabular-nums}
+  .pago .copy{border:none;background:transparent;cursor:pointer;color:var(--gris-suave);padding:4px;border-radius:6px;display:grid;place-items:center}
+  .pago .copy:hover{background:var(--gris-linea);color:var(--azul)}
+  .pago .copy svg{width:17px;height:17px}
+  .mnote{font-size:13px;color:var(--gris-suave);background:#FFF8E8;border:1px solid #F4E2B0;border-radius:11px;padding:13px 14px;margin:16px 0 20px;line-height:1.45}
+  .mnote b{color:#9A7400}
+  .mnote .mstep{margin-bottom:8px}
+  .modal .hero-cta{width:100%;justify-content:center}
+  .mwa-num{text-align:center;margin-top:12px;font-size:13px;color:var(--gris-suave)}
+  .mwa-num b{color:var(--tinta);font-variant-numeric:tabular-nums}
+  .copied{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);background:var(--azul-noche);color:#fff;padding:11px 20px;border-radius:100px;font-size:13.5px;font-weight:600;z-index:120;opacity:0;transition:opacity .2s ease;pointer-events:none}
+  .copied.show{opacity:1}
 
   /* sticky CTA mobile */
   .sticky{
@@ -327,39 +292,37 @@
   .sticky .si .sp{font-size:11px;color:var(--gris-suave);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
   .sticky .si .sv{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;color:var(--azul);line-height:1}
   .sticky .si .sv small{font-size:13px;color:var(--gris-suave);font-weight:600}
-  .sticky a{
-    background:var(--verde-wa);color:#fff;text-decoration:none;font-weight:700;font-size:15px;
-    padding:12px 20px;border-radius:11px;display:flex;align-items:center;gap:8px;white-space:nowrap;
+  .sticky-btn{
+    background:var(--verde-wa);color:#fff;border:none;font-family:'Inter',sans-serif;
+    font-weight:700;font-size:15px;padding:13px 22px;border-radius:11px;cursor:pointer;
+    display:flex;align-items:center;gap:8px;white-space:nowrap;
   }
-  .sticky a svg{width:19px;height:19px}
+  .sticky-btn:hover{background:var(--verde-wa-hover)}
+  .sticky-btn svg{width:19px;height:19px}
 
-  /* ---------- responsive ---------- */
+  /* responsive */
   @media(max-width:860px){
     .hero-grid{grid-template-columns:1fr;gap:34px;text-align:center}
     .badge-vip,.hero-cta{margin-left:auto;margin-right:auto}
     .hero-sub{margin-left:auto;margin-right:auto}
     .hero-head{justify-content:center}
-    .promesa-grid,.precio-grid{grid-template-columns:1fr}
+    .promesa-grid{grid-template-columns:1fr}
     .feats{grid-template-columns:1fr 1fr}
-    .gal{grid-template-columns:repeat(2,1fr)}
   }
+  @media(max-width:640px){.cmp{grid-template-columns:1fr}}
   @media(max-width:560px){
     section{padding:46px 0}
     .feats{grid-template-columns:1fr}
-    .gal{grid-template-columns:1fr 1fr}
-    .tickets-row{grid-template-columns:1fr}
-    .tk img{height:300px}
     .sticky{display:flex}
     .final{padding-bottom:90px}
-    body{padding-bottom:0}
   }
-  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 
 <!-- TOP BAR -->
-<div class="topbar">📲 Servicio VIP &nbsp;·&nbsp; <b>Resultados + Pronóstico diario</b> directo en tu WhatsApp</div>
+<div class="topbar">📲 Servicio VIP &nbsp;·&nbsp; <b>Resultados completos de todas las loterías</b> directo en tu WhatsApp</div>
 
 <!-- HERO -->
 <header class="hero">
@@ -376,10 +339,8 @@
       <div class="hero-copy">
         <div class="badge-vip"><span></span> Acceso VIP</div>
         <h1>Los resultados<br>llegan a tu <span class="amarillo">WhatsApp</span></h1>
-        <p class="hero-sub">Deja de salir a buscar los números. Recibe todos los resultados de las loterías —y el pronóstico del día— directo en tu teléfono, todos los días.</p>
-        <a class="hero-cta" href="#precio">
-          Quiero mi acceso VIP
-        </a>
+        <p class="hero-sub">Deja de salir a buscar los números. Recibe la tabla completa con los resultados de todas las loterías —incluyendo las que no publicamos en redes— directo en tu teléfono, todos los días.</p>
+        <button class="hero-cta cta-open" type="button">Quiero mi acceso VIP</button>
         <div class="hero-mini">Suscripción mensual · Entrega diaria · Cancela cuando quieras</div>
       </div>
 
@@ -395,19 +356,17 @@
           </div>
           <div class="phone-body">
             <div class="msg">
-              <div class="ti">RESULTADOS DE HOY</div>
+              <div class="ti">RESULTADOS COMPLETOS DE HOY</div>
               <table>
                 <tr><td>Medellín</td><td>3656 — 50</td></tr>
                 <tr><td>Santander</td><td>3884 — 11</td></tr>
                 <tr><td>Risaralda</td><td>7164 — 01</td></tr>
                 <tr><td>Bogotá</td><td>1578 — 03</td></tr>
-                <tr><td>Cundinamarca</td><td>2761 — 09</td></tr>
+                <tr><td>Sinuano Noche</td><td>2761 — 09</td></tr>
+                <tr><td>Caribeña Noche</td><td>0594 — 07</td></tr>
               </table>
-              <div class="hr"></div>
-              <table>
-                <tr><td><b style="color:var(--azul)">Pronóstico noche</b></td><td>2765</td></tr>
-              </table>
-              <div class="stamp">8:15 p. m. ✓✓</div>
+              <div class="more">+ todas las demás loterías del día</div>
+              <div class="stamp">7:05 a. m. ✓✓</div>
             </div>
           </div>
         </div>
@@ -420,23 +379,23 @@
 <section class="promesa">
   <div class="wrap">
     <span class="eyebrow">Por qué un servicio VIP</span>
-    <h2>Toda la información, sin perseguirla</h2>
-    <p class="lead">Buscar resultados en varias páginas, esperar a que actualicen, anotar a mano. El servicio VIP te lo resuelve en un solo mensaje al día.</p>
+    <h2>Todos los resultados, sin perseguirlos</h2>
+    <p class="lead">Buscar en varias páginas, esperar a que actualicen, y aun así no encontrar la lotería que necesitas. El servicio VIP te entrega todo en un solo mensaje al día.</p>
 
     <div class="promesa-grid">
       <div class="pcard antes">
         <h3>Sin el servicio</h3>
-        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#C44" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Buscas en varias páginas cada noche</div>
+        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#C44" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Buscas en varias páginas cada día</div>
         <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#C44" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Esperas a que actualicen los resultados</div>
-        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#C44" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Anotas los números a mano</div>
-        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#C44" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Sin pronóstico que te oriente</div>
+        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#C44" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Faltan loterías que no se publican</div>
+        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#C44" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Pierdes tiempo armando la información</div>
       </div>
       <div class="pcard con">
         <h3>Con el servicio VIP</h3>
-        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="var(--verde-wa)" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Un solo mensaje con todos los resultados</div>
+        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="var(--verde-wa)" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Un solo mensaje con todo, cada día</div>
         <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="var(--verde-wa)" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Te llega al WhatsApp, sin buscar nada</div>
-        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="var(--verde-wa)" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Tabla ordenada con todas las loterías</div>
-        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="var(--verde-wa)" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Pronóstico diario para las principales</div>
+        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="var(--verde-wa)" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Todas las loterías, completas</div>
+        <div class="pli"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="var(--verde-wa)" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Tabla ordenada y lista para leer</div>
       </div>
     </div>
   </div>
@@ -447,13 +406,13 @@
   <div class="wrap">
     <span class="eyebrow">Qué incluye</span>
     <h2>Tu suscripción, todos los días</h2>
-    <p class="lead">Por una cuota mensual recibes el reporte completo y el pronóstico del día, directo en tu WhatsApp.</p>
+    <p class="lead">Por una cuota mensual recibes el reporte completo de resultados directo en tu WhatsApp.</p>
 
     <div class="feats">
       <div class="feat">
         <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
         <h3>Resultados diarios</h3>
-        <p>Todas las loterías y chances del día en una sola tabla, ordenada y fácil de leer.</p>
+        <p>La tabla completa con todas las loterías y chances del día, ordenada y fácil de leer.</p>
       </div>
       <div class="feat">
         <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg></div>
@@ -461,145 +420,60 @@
         <p>Sin buscar en páginas ni esperar. El reporte te llega a tu teléfono todos los días.</p>
       </div>
       <div class="feat">
-        <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg></div>
-        <h3>Pronóstico del día</h3>
-        <p>Cuatro números de cuatro cifras para la lotería principal de cada noche.</p>
+        <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Loterías completas</h3>
+        <p>Incluye las que no publicamos en redes, como las de la costa que muchos buscan.</p>
       </div>
     </div>
 
-    <!-- calendario -->
+    <!-- comparativo -->
     <div class="cal">
-      <h3>Pronóstico según la lotería de cada noche</h3>
-      <p class="csub">Cada día trabajamos solo con las loterías principales del calendario nacional.</p>
-      <div class="days">
-        <div class="day"><div class="dn">Lunes</div><div class="dl">Cundinamarca<span>Tolima</span></div></div>
-        <div class="day"><div class="dn">Martes</div><div class="dl">Cruz Roja<span>Huila</span></div></div>
-        <div class="day"><div class="dn">Miércoles</div><div class="dl">Manizales<span>Valle</span></div></div>
-        <div class="day"><div class="dn">Jueves</div><div class="dl">Quindío<span>Risaralda</span></div></div>
-        <div class="day"><div class="dn">Viernes</div><div class="dl">Medellín<span>Santander</span></div></div>
-        <div class="day"><div class="dn">Sábado</div><div class="dl">Cauca<span>Boyacá</span></div></div>
-        <div class="day"><div class="dn">Domingo</div><div class="dl">Loterías<span>del día</span></div></div>
-        <div class="day"><div class="dn">Festivos</div><div class="dl">Sorteos<span>vigentes</span></div></div>
+      <h3>Lo que recibes que no encuentras gratis</h3>
+      <p class="csub">En nuestra página publicamos solo las principales. En el servicio VIP recibes el reporte completo, con todas las loterías del país.</p>
+      <div class="cmp">
+        <div class="cmp-col">
+          <div class="ch">En la página</div>
+          <div class="cn">14</div>
+          <div class="cl">loterías principales publicadas</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#8FA6DA" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Solo los sorteos más conocidos</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#8FA6DA" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Tienes que entrar a buscarlas</div>
+        </div>
+        <div class="cmp-col vip">
+          <div class="ch">En el servicio VIP</div>
+          <div class="cn">Todas</div>
+          <div class="cl">las loterías del país, completas</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Incluye Sinuano, Caribeña y más</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Llega sola a tu WhatsApp cada día</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ACIERTOS -->
-<section class="aciertos">
-  <div class="wrap">
-    <span class="eyebrow">Resultados de suscriptores</span>
-    <h2>Suscriptores que ya lo comprobaron</h2>
-    <p class="lead">Tenemos registro de los reportes compartidos en nuestro canal privado, respaldados con soportes verificables. Puedes revisarlos aquí.</p>
-
-    <div class="reveal-wrap">
-      <button class="reveal-btn" id="revealBtn" type="button" aria-expanded="false" aria-controls="aciertosPanel">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
-        <span class="rb-label">Ver registros de suscriptores</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
-      </button>
-
-      <div class="reveal-panel" id="aciertosPanel" hidden>
-        <div class="gal">
-          <div class="shot" data-full="img/acierto-manizales.jpg">
-            <img data-src="img/acierto-manizales.jpg" alt="Registro Manizales 053">
-            <div class="tag">Manizales · <b>053</b><br>3 cifras directas</div>
-          </div>
-          <div class="shot" data-full="img/acierto-bogota.jpg">
-            <img data-src="img/acierto-bogota.jpg" alt="Registro Bogotá 703">
-            <div class="tag">Bogotá · <b>703</b><br>3 cifras directas</div>
-          </div>
-          <div class="shot" data-full="img/acierto-risaralda.jpg">
-            <img data-src="img/acierto-risaralda.jpg" alt="Registro Risaralda 437">
-            <div class="tag">Risaralda · <b>437</b><br>3 cifras directas</div>
-          </div>
-          <div class="shot" data-full="img/acierto-tolima.jpg">
-            <img data-src="img/acierto-tolima.jpg" alt="Registro Tolima 3595">
-            <div class="tag">Tolima · <b>3595</b><br>4 cifras directas</div>
-          </div>
-        </div>
-
-        <div class="tickets-row">
-          <div class="tk" data-full="img/ticket1.jpg">
-            <span class="tklabel">Verificado</span>
-            <img data-src="img/ticket1.jpg" alt="Soporte verificable 1">
-          </div>
-          <div class="tk" data-full="img/ticket2.jpg">
-            <span class="tklabel">Verificado</span>
-            <img data-src="img/ticket2.jpg" alt="Soporte verificable 2">
-          </div>
-          <div class="tk" data-full="img/ticket3.jpg">
-            <span class="tklabel">Verificado</span>
-            <img data-src="img/ticket3.jpg" alt="Soporte verificable 3">
-          </div>
-        </div>
-
-        <p class="acl-note">Los registros corresponden a resultados reales ya ocurridos. El servicio entrega información de carácter orientativo; participar en juegos de suerte y azar no garantiza ganancias.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRECIO + PAGO -->
+<!-- PRECIO -->
 <section id="precio">
   <div class="wrap">
     <span class="eyebrow">Suscripción</span>
     <h2>Activa tu acceso VIP</h2>
-    <p class="lead">Una sola cuota al mes. Empiezas a recibir el reporte y el pronóstico desde el mismo día en que confirmas tu pago.</p>
+    <p class="lead">Una sola cuota al mes. Empiezas a recibir el reporte completo desde el mismo día en que confirmas tu pago.</p>
 
-    <div class="precio-grid">
-      <!-- tarjeta precio -->
+    <div class="precio-wrap">
       <div class="price-card">
         <div class="price-tag">Plan mensual</div>
         <div class="price-amt">
           <span class="cur">$</span>
-          <span class="num">20.000</span>
+          <span class="num">10.000</span>
           <span class="per">/ mes</span>
         </div>
-        <p class="price-desc">Acceso completo al servicio VIP por 30 días.</p>
+        <p class="price-desc">Acceso completo al servicio informativo por 30 días.</p>
         <ul class="price-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Resultados de todas las loterías, todos los días</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Pronóstico diario para las principales de la noche</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Entrega directa a tu WhatsApp</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Resultados de todas las loterías, completos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Entrega diaria directa a tu WhatsApp</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Incluye las loterías que no salen en redes</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="#FFC53D" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Grupo privado solo para suscriptores</li>
         </ul>
-        <a class="hero-cta" id="cta-pago" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
-          Pagar y enviar comprobante
-        </a>
-      </div>
-
-      <!-- pasos -->
-      <div class="pasos">
-        <h3>Cómo activar tu suscripción</h3>
-        <div class="step">
-          <div class="snum">1</div>
-          <div class="stx"><h4>Realiza el pago</h4><p>Transfiere $20.000 por Nequi, Daviplata o Bre-B a los datos de abajo.</p></div>
-        </div>
-        <div class="step">
-          <div class="snum">2</div>
-          <div class="stx"><h4>Envía el comprobante</h4><p>Toca el botón verde y mándanos la captura de tu pago por WhatsApp.</p></div>
-        </div>
-        <div class="step">
-          <div class="snum">3</div>
-          <div class="stx"><h4>Recibe tu acceso</h4><p>Te agregamos al grupo privado y empiezas a recibir resultados y pronóstico el mismo día.</p></div>
-        </div>
-
-        <div class="pagos-box">
-          <div class="pbt">Métodos de pago · $20.000</div>
-          <div class="pago">
-            <div class="pl"><div class="pdot" style="background:#DA0081">N</div><div class="pnm">Nequi</div></div>
-            <div class="pnu">321 202 6859</div>
-          </div>
-          <div class="pago">
-            <div class="pl"><div class="pdot" style="background:#ED1C27">D</div><div class="pnm">Daviplata</div></div>
-            <div class="pnu">321 202 6859</div>
-          </div>
-          <div class="pago">
-            <div class="pl"><div class="pdot" style="background:#0C2E78">B</div><div class="pnm">Llave Bre-B</div></div>
-            <div class="pnu">321 202 6859</div>
-          </div>
-        </div>
+        <button class="hero-cta cta-open" type="button">Quiero mi acceso VIP</button>
+        <div class="price-foot">Al continuar verás los datos de pago</div>
       </div>
     </div>
   </div>
@@ -610,11 +484,8 @@
   <div class="wrap">
     <span class="eyebrow" style="color:#FFC53D">Empieza hoy</span>
     <h2>No vuelvas a buscar los resultados</h2>
-    <p class="lead">Recíbelos en tu WhatsApp todos los días, con el pronóstico de la noche incluido.</p>
-    <a class="hero-cta" id="cta-final" href="#" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.23 8.24z"/></svg>
-      Quiero mi acceso VIP
-    </a>
+    <p class="lead">Recíbelos completos en tu WhatsApp todos los días, con todas las loterías del país.</p>
+    <button class="hero-cta cta-open" type="button">Quiero mi acceso VIP</button>
     <div class="final-mini">Atención por WhatsApp · Respuesta en horario de servicio</div>
   </div>
 </section>
@@ -622,70 +493,88 @@
 <!-- FOOTER -->
 <footer>
   <div class="fb"><img src="img/logo.jpg" alt=""><span>Notiresultados Colombia</span></div>
-  <p class="legal">Servicio informativo de resultados de loterías y chances de Colombia. La información y los pronósticos son de carácter orientativo y no garantizan resultados. Los juegos de suerte y azar son para mayores de 18 años. Juega con responsabilidad.</p>
+  <p class="legal">Servicio informativo de resultados de loterías de Colombia. Publicamos información de resultados oficiales con fines informativos. Los juegos de suerte y azar son para mayores de 18 años. Juega con responsabilidad.</p>
 </footer>
 
 <!-- STICKY CTA (mobile) -->
 <div class="sticky">
   <div class="si">
     <div class="sp">Plan mensual</div>
-    <div class="sv">$20.000 <small>/mes</small></div>
+    <div class="sv">$10.000 <small>/mes</small></div>
   </div>
-  <a id="cta-sticky" href="#" target="_blank" rel="noopener">
+  <button class="sticky-btn cta-open" type="button">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
     Acceder
-  </a>
+  </button>
 </div>
 
-<!-- LIGHTBOX -->
-<div class="lb" id="lb"><span class="x">&times;</span><img src="" alt=""></div>
+<!-- MODAL DE PAGO -->
+<div class="modal-ov" id="modal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <button class="modal-x" id="modalX" aria-label="Cerrar">&times;</button>
+      <div class="mlogo"><img src="img/logo.jpg" alt=""></div>
+      <h3 id="modalTitle">Activa tu acceso VIP</h3>
+      <div class="mp">Suscripción mensual al servicio informativo</div>
+      <div class="mprice"><b>$10.000</b> <small>/ mes</small></div>
+    </div>
+    <div class="modal-body">
+      <div class="mstep"><span class="mnum">1</span> Realiza el pago a una de estas cuentas</div>
+
+      <div class="pago">
+        <div class="pl"><div class="pdot" style="background:#DA0081">N</div><div class="pnm">Nequi</div></div>
+        <div class="pr"><span class="pnu">321 202 6859</span><button class="copy" data-copy="3212026859" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>
+      </div>
+      <div class="pago">
+        <div class="pl"><div class="pdot" style="background:#ED1C27">D</div><div class="pnm">Daviplata</div></div>
+        <div class="pr"><span class="pnu">321 202 6859</span><button class="copy" data-copy="3212026859" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>
+      </div>
+      <div class="pago">
+        <div class="pl"><div class="pdot" style="background:#0C2E78">B</div><div class="pnm">Llave Bre-B</div></div>
+        <div class="pr"><span class="pnu">321 202 6859</span><button class="copy" data-copy="3212026859" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>
+      </div>
+
+      <div class="mnote"><div class="mstep"><span class="mnum">2</span> Envía tu comprobante</div>Después de pagar, toca el botón y mándanos la <b>captura de tu pago</b> por WhatsApp para activar tu acceso.</div>
+
+      <a class="hero-cta" id="modalWa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+        Enviar comprobante por WhatsApp
+      </a>
+      <div class="mwa-num">WhatsApp de soporte: <b>311 253 8781</b></div>
+    </div>
+  </div>
+</div>
+
+<div class="copied" id="copied">Número copiado ✓</div>
 
 <script>
   // ===== CONFIG =====
-  var WHATSAPP = "573112538781"; // WhatsApp Business para comprobantes
-  var MSG = encodeURIComponent("Hola Notiresultados 👋 Quiero activar mi suscripción VIP ($20.000/mes). Acabo de realizar el pago y les envío el comprobante.");
-  var WA_LINK = "https://wa.me/" + WHATSAPP + "?text=" + MSG;
+  var WHATSAPP = "573112538781";
+  var MSG = encodeURIComponent("Hola Notiresultados 👋 Quiero activar mi suscripción VIP ($10.000/mes). Acabo de realizar el pago y les envío el comprobante.");
+  document.getElementById("modalWa").href = "https://wa.me/" + WHATSAPP + "?text=" + MSG;
 
-  ["cta-pago","cta-final","cta-sticky"].forEach(function(id){
-    var el = document.getElementById(id);
-    if(el) el.href = WA_LINK;
-  });
+  // ===== MODAL =====
+  var modal = document.getElementById("modal");
+  function openModal(){ modal.classList.add("on"); document.body.style.overflow="hidden"; }
+  function closeModal(){ modal.classList.remove("on"); document.body.style.overflow=""; }
+  document.querySelectorAll(".cta-open").forEach(function(b){ b.addEventListener("click", openModal); });
+  document.getElementById("modalX").addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if(e.target===modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeModal(); });
 
-  // ===== REVELAR ACIERTOS (carga diferida) =====
-  var revealBtn = document.getElementById("revealBtn");
-  var panel = document.getElementById("aciertosPanel");
-  var loaded = false;
-  revealBtn.addEventListener("click", function(){
-    var open = panel.hasAttribute("hidden");
-    if(open){
-      if(!loaded){
-        panel.querySelectorAll("img[data-src]").forEach(function(im){
-          im.src = im.getAttribute("data-src");
-        });
-        loaded = true;
-      }
-      panel.removeAttribute("hidden");
-      revealBtn.setAttribute("aria-expanded","true");
-      revealBtn.querySelector(".rb-label").textContent = "Ocultar registros";
-    } else {
-      panel.setAttribute("hidden","");
-      revealBtn.setAttribute("aria-expanded","false");
-      revealBtn.querySelector(".rb-label").textContent = "Ver registros de suscriptores";
-    }
-  });
-
-  // ===== LIGHTBOX =====
-  var lb = document.getElementById("lb");
-  var lbImg = lb.querySelector("img");
-  document.querySelectorAll("[data-full]").forEach(function(node){
-    node.addEventListener("click", function(){
-      lbImg.src = node.getAttribute("data-full");
-      lb.classList.add("on");
+  // ===== COPIAR NÚMERO =====
+  var toast = document.getElementById("copied");
+  var toastT;
+  document.querySelectorAll(".copy").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var val = btn.getAttribute("data-copy");
+      navigator.clipboard.writeText(val).then(function(){
+        toast.classList.add("show");
+        clearTimeout(toastT);
+        toastT = setTimeout(function(){ toast.classList.remove("show"); }, 1600);
+      });
     });
   });
-  function closeLb(){ lb.classList.remove("on"); lbImg.src=""; }
-  lb.addEventListener("click", closeLb);
-  document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeLb(); });
 </script>
 </body>
 </html>
