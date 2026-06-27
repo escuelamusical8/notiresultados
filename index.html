@@ -236,6 +236,23 @@
   }
   .acl-note{margin-top:22px;font-size:13px;color:var(--gris-suave);text-align:center;max-width:620px;margin-left:auto;margin-right:auto}
 
+  /* botón revelar aciertos */
+  .reveal-wrap{margin-top:34px}
+  .reveal-btn{
+    display:flex;align-items:center;gap:12px;width:100%;
+    background:#fff;border:1.5px solid var(--azul);color:var(--azul);
+    font-family:'Inter',sans-serif;font-weight:700;font-size:16px;
+    padding:18px 22px;border-radius:14px;cursor:pointer;
+    box-shadow:var(--sombra);transition:background .15s ease, color .15s ease;
+  }
+  .reveal-btn:hover{background:var(--azul);color:#fff}
+  .reveal-btn svg{width:22px;height:22px;flex:none}
+  .reveal-btn .rb-label{flex:1;text-align:left}
+  .reveal-btn .chev{transition:transform .25s ease}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
+  .reveal-panel{margin-top:22px}
+  .reveal-panel[hidden]{display:none}
+
   /* precio */
   .precio-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:36px}
   .price-card{
@@ -471,45 +488,55 @@
 <!-- ACIERTOS -->
 <section class="aciertos">
   <div class="wrap">
-    <span class="eyebrow">Aciertos reales</span>
-    <h2>Lo que hemos pegado</h2>
-    <p class="lead">Pronósticos compartidos en nuestro canal y respaldados con tickets físicos pagados. Toca cualquier imagen para verla completa.</p>
+    <span class="eyebrow">Resultados de suscriptores</span>
+    <h2>Suscriptores que ya lo comprobaron</h2>
+    <p class="lead">Tenemos registro de los reportes compartidos en nuestro canal privado, respaldados con soportes verificables. Puedes revisarlos aquí.</p>
 
-    <div class="gal">
-      <div class="shot" data-full="img/acierto-manizales.jpg">
-        <img src="img/acierto-manizales.jpg" alt="Acierto Manizales 053" loading="lazy">
-        <div class="tag">Manizales · <b>053</b><br>3 cifras directas</div>
-      </div>
-      <div class="shot" data-full="img/acierto-bogota.jpg">
-        <img src="img/acierto-bogota.jpg" alt="Acierto Bogotá 703" loading="lazy">
-        <div class="tag">Bogotá · <b>703</b><br>3 cifras directas</div>
-      </div>
-      <div class="shot" data-full="img/acierto-risaralda.jpg">
-        <img src="img/acierto-risaralda.jpg" alt="Acierto Risaralda 437" loading="lazy">
-        <div class="tag">Risaralda · <b>437</b><br>3 cifras directas</div>
-      </div>
-      <div class="shot" data-full="img/acierto-tolima.jpg">
-        <img src="img/acierto-tolima.jpg" alt="Acierto Tolima 3595" loading="lazy">
-        <div class="tag">Tolima · <b>3595</b><br>4 cifras directas</div>
+    <div class="reveal-wrap">
+      <button class="reveal-btn" id="revealBtn" type="button" aria-expanded="false" aria-controls="aciertosPanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span class="rb-label">Ver registros de suscriptores</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+
+      <div class="reveal-panel" id="aciertosPanel" hidden>
+        <div class="gal">
+          <div class="shot" data-full="img/acierto-manizales.jpg">
+            <img data-src="img/acierto-manizales.jpg" alt="Registro Manizales 053">
+            <div class="tag">Manizales · <b>053</b><br>3 cifras directas</div>
+          </div>
+          <div class="shot" data-full="img/acierto-bogota.jpg">
+            <img data-src="img/acierto-bogota.jpg" alt="Registro Bogotá 703">
+            <div class="tag">Bogotá · <b>703</b><br>3 cifras directas</div>
+          </div>
+          <div class="shot" data-full="img/acierto-risaralda.jpg">
+            <img data-src="img/acierto-risaralda.jpg" alt="Registro Risaralda 437">
+            <div class="tag">Risaralda · <b>437</b><br>3 cifras directas</div>
+          </div>
+          <div class="shot" data-full="img/acierto-tolima.jpg">
+            <img data-src="img/acierto-tolima.jpg" alt="Registro Tolima 3595">
+            <div class="tag">Tolima · <b>3595</b><br>4 cifras directas</div>
+          </div>
+        </div>
+
+        <div class="tickets-row">
+          <div class="tk" data-full="img/ticket1.jpg">
+            <span class="tklabel">Verificado</span>
+            <img data-src="img/ticket1.jpg" alt="Soporte verificable 1">
+          </div>
+          <div class="tk" data-full="img/ticket2.jpg">
+            <span class="tklabel">Verificado</span>
+            <img data-src="img/ticket2.jpg" alt="Soporte verificable 2">
+          </div>
+          <div class="tk" data-full="img/ticket3.jpg">
+            <span class="tklabel">Verificado</span>
+            <img data-src="img/ticket3.jpg" alt="Soporte verificable 3">
+          </div>
+        </div>
+
+        <p class="acl-note">Los registros corresponden a resultados reales ya ocurridos. El servicio entrega información de carácter orientativo; participar en juegos de suerte y azar no garantiza ganancias.</p>
       </div>
     </div>
-
-    <div class="tickets-row">
-      <div class="tk" data-full="img/ticket1.jpg">
-        <span class="tklabel">Pagado</span>
-        <img src="img/ticket1.jpg" alt="Ticket pagado Valle-Manizales" loading="lazy">
-      </div>
-      <div class="tk" data-full="img/ticket2.jpg">
-        <span class="tklabel">Pagado</span>
-        <img src="img/ticket2.jpg" alt="Ticket Lotería de Bogotá" loading="lazy">
-      </div>
-      <div class="tk" data-full="img/ticket3.jpg">
-        <span class="tklabel">Pagado</span>
-        <img src="img/ticket3.jpg" alt="Ticket Gana Diario" loading="lazy">
-      </div>
-    </div>
-
-    <p class="acl-note">Los aciertos mostrados son resultados reales ya ocurridos. El servicio entrega información y pronósticos de carácter orientativo; participar en juegos de suerte y azar no garantiza ganancias.</p>
   </div>
 </section>
 
@@ -622,6 +649,29 @@
   ["cta-pago","cta-final","cta-sticky"].forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.href = WA_LINK;
+  });
+
+  // ===== REVELAR ACIERTOS (carga diferida) =====
+  var revealBtn = document.getElementById("revealBtn");
+  var panel = document.getElementById("aciertosPanel");
+  var loaded = false;
+  revealBtn.addEventListener("click", function(){
+    var open = panel.hasAttribute("hidden");
+    if(open){
+      if(!loaded){
+        panel.querySelectorAll("img[data-src]").forEach(function(im){
+          im.src = im.getAttribute("data-src");
+        });
+        loaded = true;
+      }
+      panel.removeAttribute("hidden");
+      revealBtn.setAttribute("aria-expanded","true");
+      revealBtn.querySelector(".rb-label").textContent = "Ocultar registros";
+    } else {
+      panel.setAttribute("hidden","");
+      revealBtn.setAttribute("aria-expanded","false");
+      revealBtn.querySelector(".rb-label").textContent = "Ver registros de suscriptores";
+    }
   });
 
   // ===== LIGHTBOX =====
