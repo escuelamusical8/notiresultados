@@ -75,7 +75,7 @@
   .hero-brand .nm{font-weight:800;font-size:18px;line-height:1.1;letter-spacing:.01em}
   .hero-brand .sb{font-size:12.5px;color:#A9BEEC;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
 
-  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+  .hero-grid{display:grid;grid-template-columns:1fr .92fr;gap:40px;align-items:center}
   .badge-vip{
     display:inline-flex;align-items:center;gap:8px;
     background:rgba(224,161,0,.16);
@@ -99,8 +99,21 @@
     font-size:clamp(15.5px,2vw,17.5px);
     color:#D5E0F7;
     max-width:480px;
-    margin-bottom:26px;
+    margin-bottom:22px;
   }
+  .hero-benef{list-style:none;margin-bottom:24px;max-width:460px}
+  .hero-benef li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#EAF0FC;margin-bottom:11px;line-height:1.4}
+  .hero-benef li:last-child{margin-bottom:0}
+  .hero-benef svg{flex:none;width:20px;height:20px;margin-top:1px}
+  .hero-price{
+    display:inline-flex;align-items:center;gap:12px;
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+    padding:11px 18px;border-radius:14px;margin-bottom:24px;
+  }
+  .hero-price .hp-tag{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#FFD66B}
+  .hero-price .hp-amt{display:inline-flex;align-items:baseline;gap:5px}
+  .hero-price .hp-amt b{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;line-height:1}
+  .hero-price .hp-amt small{font-size:13px;color:#BFD2F6;font-weight:600}
   .hero-cta{
     display:inline-flex;align-items:center;gap:11px;
     background:var(--verde-wa);color:#fff;text-decoration:none;border:none;
@@ -114,29 +127,37 @@
   .hero-mini{margin-top:14px;font-size:13px;color:#9FB4E4}
 
   /* phone mock */
+  .phone-wrap{justify-self:center;text-align:center}
+  .phone-label{
+    display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;
+    background:rgba(31,168,85,.16);border:1px solid rgba(31,168,85,.5);
+    color:#7DEAAB;font-size:12.5px;font-weight:700;letter-spacing:.04em;
+    padding:8px 16px;border-radius:100px;
+  }
+  .phone-label svg{width:16px;height:16px;flex:none}
   .phone{
-    justify-self:center;width:248px;background:#0B1736;
-    border-radius:30px;padding:11px;
+    width:300px;background:#0B1736;margin:0 auto;
+    border-radius:34px;padding:13px;
     box-shadow:var(--sombra-fuerte), inset 0 0 0 1px rgba(255,255,255,.07);
   }
-  .phone-screen{background:#E9EDF6;border-radius:21px;overflow:hidden}
-  .phone-top{background:var(--azul);color:#fff;padding:11px 13px;display:flex;align-items:center;gap:9px}
-  .phone-top .pl{width:30px;height:30px;border-radius:50%;background:#fff;padding:2px;flex:none}
+  .phone-screen{background:#E9EDF6;border-radius:24px;overflow:hidden}
+  .phone-top{background:var(--azul);color:#fff;padding:13px 15px;display:flex;align-items:center;gap:10px}
+  .phone-top .pl{width:34px;height:34px;border-radius:50%;background:#fff;padding:2px;flex:none}
   .phone-top .pl img{width:100%;height:100%;border-radius:50%;object-fit:cover}
-  .phone-top .pn{font-size:13px;font-weight:700;line-height:1.1}
-  .phone-top .ps{font-size:10.5px;color:#BFD2F6}
-  .phone-body{padding:13px 11px 16px;min-height:150px}
+  .phone-top .pn{font-size:14.5px;font-weight:700;line-height:1.1}
+  .phone-top .ps{font-size:11.5px;color:#BFD2F6}
+  .phone-body{padding:15px 13px 18px;min-height:150px}
   .msg{
-    background:#fff;border-radius:4px 13px 13px 13px;padding:9px 11px;
-    font-size:11.5px;color:#1B2742;box-shadow:0 1px 2px rgba(0,0,0,.08);
+    background:#fff;border-radius:5px 15px 15px 15px;padding:12px 13px;
+    font-size:13px;color:#1B2742;box-shadow:0 1px 3px rgba(0,0,0,.10);text-align:left;
   }
-  .msg .ti{font-weight:700;color:var(--azul);font-size:10.5px;margin-bottom:5px;letter-spacing:.02em}
-  .msg table{width:100%;border-collapse:collapse;font-size:10.5px}
-  .msg td{padding:2px 0}
+  .msg .ti{font-weight:800;color:var(--azul);font-size:12px;margin-bottom:8px;letter-spacing:.02em;text-align:center;padding-bottom:7px;border-bottom:1px solid #E4E9F4}
+  .msg table{width:100%;border-collapse:collapse;font-size:11.5px}
+  .msg td{padding:2.5px 0}
   .msg td:first-child{color:#3A476A;font-weight:500}
   .msg td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;color:#10204A}
-  .msg .more{margin-top:6px;font-size:9.5px;color:#93A1C2;text-align:center;font-style:italic}
-  .msg .stamp{font-size:9px;color:#93A1C2;text-align:right;margin-top:6px}
+  .msg .more{margin-top:7px;font-size:10.5px;color:#93A1C2;text-align:center;font-style:italic}
+  .msg .stamp{font-size:10px;color:#93A1C2;text-align:right;margin-top:7px}
 
   /* ---------- SECCIONES ---------- */
   section{padding:58px 0}
@@ -277,6 +298,8 @@
   .modal .hero-cta{width:100%;justify-content:center}
   .mwa-num{text-align:center;margin-top:12px;font-size:13px;color:var(--gris-suave)}
   .mwa-num b{color:var(--tinta);font-variant-numeric:tabular-nums}
+  .mactiv{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:14px;padding-top:14px;border-top:1px solid var(--gris-linea);font-size:12.5px;color:var(--gris-suave);line-height:1.4}
+  .mactiv svg{flex:none;width:16px;height:16px;color:var(--verde-wa)}
   .copied{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);background:var(--azul-noche);color:#fff;padding:11px 20px;border-radius:100px;font-size:13.5px;font-weight:600;z-index:120;opacity:0;transition:opacity .2s ease;pointer-events:none}
   .copied.show{opacity:1}
 
@@ -305,6 +328,7 @@
     .hero-grid{grid-template-columns:1fr;gap:34px;text-align:center}
     .badge-vip,.hero-cta{margin-left:auto;margin-right:auto}
     .hero-sub{margin-left:auto;margin-right:auto}
+    .hero-benef{margin-left:auto;margin-right:auto;text-align:left;display:inline-block}
     .hero-head{justify-content:center}
     .promesa-grid{grid-template-columns:1fr}
     .feats{grid-template-columns:1fr 1fr}
@@ -339,34 +363,56 @@
       <div class="hero-copy">
         <div class="badge-vip"><span></span> Acceso VIP</div>
         <h1>Los resultados<br>llegan a tu <span class="amarillo">WhatsApp</span></h1>
-        <p class="hero-sub">Deja de salir a buscar los números. Recibe la tabla completa con los resultados de todas las loterías —incluyendo las que no publicamos en redes— directo en tu teléfono, todos los días.</p>
+        <p class="hero-sub">Deja de salir a buscar los números. Recibe la tabla completa con todas las loterías de Colombia, directo en tu teléfono, todos los días.</p>
+
+        <ul class="hero-benef">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.6"><path d="M5 12.5l4 4L19 7"/></svg>Todas las loterías de Colombia, completas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.6"><path d="M5 12.5l4 4L19 7"/></svg>Actualización diaria, todo en un solo mensaje</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.6"><path d="M5 12.5l4 4L19 7"/></svg>Organizado, sin publicidad y sin buscar nada</li>
+        </ul>
+
+        <div class="hero-price">
+          <span class="hp-tag">Servicio VIP</span>
+          <span class="hp-amt"><b>$10.000</b> <small>/ mes</small></span>
+        </div>
+
         <button class="hero-cta cta-open" type="button">Quiero mi acceso VIP</button>
         <div class="hero-mini">Suscripción mensual · Entrega diaria · Cancela cuando quieras</div>
       </div>
 
       <!-- phone mock -->
-      <div class="phone" aria-hidden="true">
-        <div class="phone-screen">
-          <div class="phone-top">
-            <div class="pl"><img src="img/logo.jpg" alt=""></div>
-            <div>
-              <div class="pn">Notiresultados</div>
-              <div class="ps">en línea</div>
+      <div class="phone-wrap">
+        <div class="phone-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12.5l4 4L19 7"/></svg>
+          Así te llegan a tu WhatsApp
+        </div>
+        <div class="phone" aria-hidden="true">
+          <div class="phone-screen">
+            <div class="phone-top">
+              <div class="pl"><img src="img/logo.jpg" alt=""></div>
+              <div>
+                <div class="pn">Notiresultados</div>
+                <div class="ps">en línea</div>
+              </div>
             </div>
-          </div>
-          <div class="phone-body">
-            <div class="msg">
-              <div class="ti">RESULTADOS COMPLETOS DE HOY</div>
-              <table>
-                <tr><td>Medellín</td><td>3656 — 50</td></tr>
-                <tr><td>Santander</td><td>3884 — 11</td></tr>
-                <tr><td>Risaralda</td><td>7164 — 01</td></tr>
-                <tr><td>Bogotá</td><td>1578 — 03</td></tr>
-                <tr><td>Sinuano Noche</td><td>2761 — 09</td></tr>
-                <tr><td>Caribeña Noche</td><td>0594 — 07</td></tr>
-              </table>
-              <div class="more">+ todas las demás loterías del día</div>
-              <div class="stamp">7:05 a. m. ✓✓</div>
+            <div class="phone-body">
+              <div class="msg">
+                <div class="ti">RESULTADOS COMPLETOS DE HOY</div>
+                <table>
+                  <tr><td>Dorado Mañana</td><td>3646 — 230</td></tr>
+                  <tr><td>Dorado Tarde</td><td>4407 — 145</td></tr>
+                  <tr><td>Medellín</td><td>3656 — 50</td></tr>
+                  <tr><td>Santander</td><td>3884 — 11</td></tr>
+                  <tr><td>Risaralda</td><td>7164 — 01</td></tr>
+                  <tr><td>Sinuano Día</td><td>9382 — 5</td></tr>
+                  <tr><td>Sinuano Noche</td><td>2761 — 09</td></tr>
+                  <tr><td>Caribeña Día</td><td>1155 — 8</td></tr>
+                  <tr><td>Caribeña Noche</td><td>0594 — 07</td></tr>
+                  <tr><td>Pijao Oro</td><td>5263 — 1</td></tr>
+                </table>
+                <div class="more">+ todas las demás loterías del país</div>
+                <div class="stamp">7:05 a. m. ✓✓</div>
+              </div>
             </div>
           </div>
         </div>
@@ -435,15 +481,15 @@
           <div class="ch">En la página</div>
           <div class="cn">14</div>
           <div class="cl">loterías principales publicadas</div>
-          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#8FA6DA" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Solo los sorteos más conocidos</div>
-          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#8FA6DA" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Tienes que entrar a buscarlas</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#8FA6DA" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Solo las loterías más consultadas</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#8FA6DA" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Debes entrar a buscarlas cada día</div>
         </div>
         <div class="cmp-col vip">
           <div class="ch">En el servicio VIP</div>
           <div class="cn">Todas</div>
           <div class="cl">las loterías del país, completas</div>
-          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Incluye Sinuano, Caribeña y más</div>
-          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Llega sola a tu WhatsApp cada día</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Incluye Sinuano, Caribeña, Pijao, Astro y más</div>
+          <div class="cmp-li"><svg viewBox="0 0 24 24" fill="none" stroke="#6FE0A0" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Llegan directo a tu WhatsApp, cada día</div>
         </div>
       </div>
     </div>
@@ -541,6 +587,7 @@
         Enviar comprobante por WhatsApp
       </a>
       <div class="mwa-num">WhatsApp de soporte: <b>311 253 8781</b></div>
+      <div class="mactiv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Activación en aproximadamente 10 minutos, en horario de atención.</div>
     </div>
   </div>
 </div>
